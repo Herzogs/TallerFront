@@ -41,8 +41,8 @@ export class RegistroComponent implements OnInit{
     console.log(this.form);
     const nuevoUsuario: IUsuarioRegistro = {
       email: this.form.get('email')?.value,
-      user: this.form.get('user')?.value,
-      pass: this.form.get('pass')?.value
+      username: this.form.get('user')?.value,
+      password: this.form.get('pass')?.value
     }
     this._usuarioService.crearUsuario(nuevoUsuario).subscribe(data => {
       console.log(data);

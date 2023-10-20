@@ -8,12 +8,12 @@ export interface IUsuario{
 }
 
 export interface IUsuarioLogin{
-    user: string;
-    pass: string;
+    username: string;
+    password: string;
 }
 
 export interface IUsuarioRegistro{
-    user: string;
-    pass: string;
+    username: string;
+    password: string;
     email: string;
 }

@@ -30,8 +30,8 @@ export class LoginComponent implements OnInit {
 
   iniciarSecion(){
     const usuario: IUsuarioLogin = {
-      user: this.form.get('user')?.value,
-      pass: this.form.get('pass')?.value
+      username: this.form.get('user')?.value,
+      password: this.form.get('pass')?.value
     }
     console.log(usuario);
     this._usuarioService.login(usuario).subscribe(data => {
